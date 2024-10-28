@@ -19,8 +19,10 @@ CRC16 crc;
 WiFiClient wifiClient;
 HTTPClient http;
 
-// 디바이스 ID (수신기)
-const String device_id = "A2410001";
+//// 디바이스 ID (수신기)
+// const String device_id = "A2410001";
+// 디바이스 ID (송신기) - 서버에 전송해야 하는 장치정보는 송신기.
+const String device_id = "B2410001";
 
 void setup() {
    Serial.begin(115200);
